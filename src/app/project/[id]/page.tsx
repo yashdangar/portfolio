@@ -8,10 +8,7 @@ import {
   Github,
   Calendar,
   Tag,
-  Code,
   Globe,
-  Users,
-  Database,
   GitBranch,
 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -103,7 +100,7 @@ export default function ProjectPage() {
           <div className="text-center">
             <h1 className="text-2xl font-bold mb-4">Project Not Found</h1>
             <p className="text-gray-400 mb-8">
-              The project you're looking for doesn't exist.
+              The project you&apos;re looking for doesn&apos;t exist.
             </p>
             <Link
               href="/"
@@ -118,22 +115,7 @@ export default function ProjectPage() {
     );
   }
 
-  const getStatusColor = (color?: string) => {
-    switch (color) {
-      case "green":
-        return "bg-green-500/20 text-green-400 border-green-500/30";
-      case "blue":
-        return "bg-blue-500/20 text-blue-400 border-blue-500/30";
-      case "orange":
-        return "bg-orange-500/20 text-orange-400 border-orange-500/30";
-      case "gray":
-        return "bg-gray-500/20 text-gray-400 border-gray-500/30";
-      case "amber":
-        return "bg-amber-500/20 text-amber-400 border-amber-500/30";
-      default:
-        return "bg-gray-500/20 text-gray-400 border-gray-500/30";
-    }
-  };
+
 
   return (
     <main className="min-h-screen bg-black text-white p-6 md:p-12 lg:p-24">
