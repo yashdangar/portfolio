@@ -22,7 +22,7 @@ export default function NotFound() {
             {/* Error Message */}
             <div className="mb-8">
               <p className="text-gray-400 text-sm md:text-base mb-4">
-                Oops! The page you're looking for doesn't exist.
+                Oops! The page you&apos;re looking for doesn&apos;t exist.
               </p>
               <p className="text-zinc-500 text-xs md:text-sm">
                 It might have been moved, deleted, or you entered the wrong URL.
