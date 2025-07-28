@@ -115,8 +115,6 @@ export default function ProjectPage() {
     );
   }
 
-
-
   return (
     <main className="min-h-screen bg-black text-white p-6 md:p-12 lg:p-24">
       <div className="w-full sm:w-5/6 md:w-2/3 lg:w-1/2 2xl:w-1/4 mx-auto">
@@ -139,7 +137,7 @@ export default function ProjectPage() {
             <div className="flex items-start justify-between mb-4">
               <h1 className="text-2xl md:text-4xl font-bold">
                 {project.title}
-              </h1> 
+              </h1>
             </div>
 
             {/* Short Description */}
@@ -279,7 +277,6 @@ export default function ProjectPage() {
               </div>
             </section>
           )}
-
         </motion.div>
       </div>
     </main>

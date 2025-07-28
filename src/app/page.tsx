@@ -36,36 +36,37 @@ export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Yash Dangar",
-    "jobTitle": "Software Engineer",
-    "description": "Software engineer building elegant interfaces for the modern web",
-    "url": "https://yashdangar.me",
-    "image": "https://yashdangar.me/og-image.png",
-    "sameAs": [
+    name: "Yash Dangar",
+    jobTitle: "Software Engineer",
+    description:
+      "Software engineer building elegant interfaces for the modern web",
+    url: "https://yashdangar.me",
+    image: "https://yashdangar.me/og-image.png",
+    sameAs: [
       "https://github.com/yashdangar",
       "https://linkedin.com/in/yashdangar",
-      "https://x.com/YashDangar20"
+      "https://x.com/YashDangar20",
     ],
-    "address": {
+    address: {
       "@type": "PostalAddress",
-      "addressLocality": "Surat",
-      "addressCountry": "India"
+      addressLocality: "Surat",
+      addressCountry: "India",
     },
-    "alumniOf": {
+    alumniOf: {
       "@type": "Organization",
-      "name": "SCET"
+      name: "SCET",
     },
-    "worksFor": {
+    worksFor: {
       "@type": "Organization",
-      "name": "BuffIndia"
+      name: "BuffIndia",
     },
-    "knowsAbout": [
+    knowsAbout: [
       "Web Development",
       "React",
       "Next.js",
       "Frontend Development",
-      "Software Engineering"
-    ]
+      "Software Engineering",
+    ],
   };
 
   return (
@@ -81,14 +82,19 @@ export default function Home() {
         <div className="w-full sm:w-5/6 md:w-2/3 lg:w-1/2  2xl:w-1/4 mx-auto">
           <BlurFade delay={0.25} inView>
             <header className="mb-5 p-2">
-              <h1 className="text-xl md:text-3xl font-bold mb-2">Yash Dangar</h1>
+              <h1 className="text-xl md:text-3xl font-bold mb-2">
+                Yash Dangar
+              </h1>
 
               <p className="text-gray-400 mb-2 lg:text-md text-xs">
                 Hi , I&apos;m Yash - a software engineer building Elegant
                 interfaces for the modern web.
               </p>
             </header>
-            <section className="text-xs md:text-sm lg:text-md text-zinc-400 flex flex-col gap-1 mb-5" aria-label="Professional Information">
+            <section
+              className="text-xs md:text-sm lg:text-md text-zinc-400 flex flex-col gap-1 mb-5"
+              aria-label="Professional Information"
+            >
               <p className="flex mb-1 gap-2 items-center italic">
                 <BriefcaseBusiness aria-hidden="true" />
                 Ex.SDE-1 Intern at
@@ -173,45 +179,52 @@ export default function Home() {
               </nav>
             </section>
 
-                      <section className="flex flex-col w-full mb-8" aria-label="Projects">
-            <div className="flex items-center gap-4 mb-2 justify-between">
-              <h2 className="text-white text-md ms:text-md">Projects</h2>
+            <section
+              className="flex flex-col w-full mb-8"
+              aria-label="Projects"
+            >
+              <div className="flex items-center gap-4 mb-2 justify-between">
+                <h2 className="text-white text-md ms:text-md">Projects</h2>
 
-              <Tabs
-                defaultValue="internship"
-                onValueChange={(value) => setActiveTab(value)}
-                className=""
-                aria-label="Project Categories"
-              >
-                <TabsList className="bg-white/5 text-white border border-white/4 rounded-md px-1 py-5">
-                  <TabsTrigger
-                    value="internship"
-                    className="data-[state=active]:bg-black data-[state=active]:border-white/6 data-[state=active]:drop-shadow-md text-gray-200/70 data-[state=active]:text-white rounded-sm px-2 md:px-3 py-4 text-xs md:text-sm font-medium transition-all cursor-pointer"
-                  >
-                    Internship
-                  </TabsTrigger>
-                  <TabsTrigger
-                    value="freelance"
-                    className="data-[state=active]:bg-black data-[state=active]:border-white/6 data-[state=active]:drop-shadow-md text-gray-200/70 data-[state=active]:text-white rounded-sm px-2 md:px-3 py-4 text-xs md:text-sm font-medium transition-all cursor-pointer"
-                  >
-                    Freelance
-                  </TabsTrigger>
-                  <TabsTrigger
-                    value="side"
-                    className="data-[state=active]:bg-black data-[state=active]:border-white/6 data-[state=active]:drop-shadow-md text-gray-200/70 data-[state=active]:text-white rounded-sm px-2 md:px-3 py-4 text-xs md:text-sm font-medium transition-all cursor-pointer"
-                  >
-                    Side
-                  </TabsTrigger>
-                </TabsList>
-              </Tabs>
+                <Tabs
+                  defaultValue="internship"
+                  onValueChange={(value) => setActiveTab(value)}
+                  className=""
+                  aria-label="Project Categories"
+                >
+                  <TabsList className="bg-white/5 text-white border border-white/4 rounded-md px-1 py-5">
+                    <TabsTrigger
+                      value="internship"
+                      className="data-[state=active]:bg-black data-[state=active]:border-white/6 data-[state=active]:drop-shadow-md text-gray-200/70 data-[state=active]:text-white rounded-sm px-2 md:px-3 py-4 text-xs md:text-sm font-medium transition-all cursor-pointer"
+                    >
+                      Internship
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="freelance"
+                      className="data-[state=active]:bg-black data-[state=active]:border-white/6 data-[state=active]:drop-shadow-md text-gray-200/70 data-[state=active]:text-white rounded-sm px-2 md:px-3 py-4 text-xs md:text-sm font-medium transition-all cursor-pointer"
+                    >
+                      Freelance
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="side"
+                      className="data-[state=active]:bg-black data-[state=active]:border-white/6 data-[state=active]:drop-shadow-md text-gray-200/70 data-[state=active]:text-white rounded-sm px-2 md:px-3 py-4 text-xs md:text-sm font-medium transition-all cursor-pointer"
+                    >
+                      Side
+                    </TabsTrigger>
+                  </TabsList>
+                </Tabs>
+              </div>
+            </section>
+
+            <div
+              className="space-y-2"
+              role="list"
+              aria-label={`${activeTab} projects`}
+            >
+              {getProjectsForTab().map((project, index) => (
+                <ProjectCard key={`${activeTab}-${project.id}`} project={project} />
+              ))}
             </div>
-          </section>
-
-                      <div className="space-y-2" role="list" aria-label={`${activeTab} projects`}>
-            {getProjectsForTab().map((project, index) => (
-              <ProjectCard key={index} project={project} />
-            ))}
-          </div>
           </BlurFade>
         </div>
       </main>

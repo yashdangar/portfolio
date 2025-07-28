@@ -128,13 +128,13 @@ export const sideProjects: Project[] = [
     date: 'January 15, 2025',
   },
   {
-    "id": "realtime-chatapp",
-    "category": "side",
-    "title": "Real-Time Chat Application",
-    "github": "https://github.com/yashdangar/ChatApp",
-    "repoCount": 1,
-    "description": "Modern real-time chat application with WebSocket communication, room-based messaging, and responsive design. Features dark/light theme switching and intuitive user interface.",
-    "longDescription": `A **real-time chat application** built with modern web technologies, featuring instant messaging capabilities, room-based communication, and a responsive user interface with theme customization.
+    id: "realtime-chatapp",
+    category: "side",
+    title: "Real-Time Chat Application",
+    github: "https://github.com/yashdangar/ChatApp",
+    repoCount: 1,
+    description: "Modern real-time chat application with WebSocket communication, room-based messaging, and responsive design. Features dark/light theme switching and intuitive user interface.",
+    longDescription: `A **real-time chat application** built with modern web technologies, featuring instant messaging capabilities, room-based communication, and a responsive user interface with theme customization.
   
 ## Project Overview:
     Complete real-time messaging platform enabling instant communication between users through WebSocket connections, with room-based organization and modern UI/UX design.
@@ -224,8 +224,8 @@ export const sideProjects: Project[] = [
   
 ## Technology Integration:
     Seamless integration of modern web technologies to create a responsive, real-time communication platform that prioritizes user experience and performance.`,
-    "tags": ["React", "TypeScript", "WebSocket", "Real-time", "Chat", "Vite", "Tailwind"],
-    "features": [
+    tags: ["React", "TypeScript", "WebSocket", "Real-time", "Chat", "Vite", "Tailwind"],
+    features: [
       "Real-time messaging with WebSocket communication",
       "Room-based chat system with unique room codes",
       "Dark/light theme switching with persistent storage",
@@ -235,7 +235,7 @@ export const sideProjects: Project[] = [
       "Type-safe development with TypeScript",
       "Instant message broadcasting to room participants"
     ],
-    "techStack": [
+    techStack: [
       "React 18",
       "TypeScript",
       "WebSocket API",
@@ -245,16 +245,16 @@ export const sideProjects: Project[] = [
       "React Router",
       "Lucide React Icons"
     ],
-    "date": "December 2024"
+    date: "December 2024"
   },
   {
-    "id": "course-selling-app",
-    "category": "side",
-    "title": "Course Selling Platform",
-    "github": "https://github.com/yashdangar/Course-Selling-app",
-    "repoCount": 1,
-    "description": "Full-stack e-learning marketplace with dual user roles, secure authentication, course management, and integrated payment processing. Features admin course creation and user purchase tracking.",
-    "longDescription": `A comprehensive **e-learning marketplace** built with React frontend and Node.js backend, featuring dual user authentication, course management, and secure payment processing for educational content distribution.
+    id: "course-selling-app",
+    category: "side",
+    title: "Course Selling Platform",
+    github: "https://github.com/yashdangar/Course-Selling-app",
+    repoCount: 1,
+    description: "Full-stack e-learning marketplace with dual user roles, secure authentication, course management, and integrated payment processing. Features admin course creation and user purchase tracking.",
+    longDescription: `A comprehensive **e-learning marketplace** built with React frontend and Node.js backend, featuring dual user authentication, course management, and secure payment processing for educational content distribution.
   
 ## Project Overview:
   Complete course selling platform enabling educators to create and sell courses while providing students with a seamless learning marketplace experience with integrated payment and course management capabilities.
@@ -339,8 +339,8 @@ export const sideProjects: Project[] = [
   
 ## Technology Integration:
   Seamless integration of modern web technologies to create a scalable e-learning marketplace that bridges content creators with learners through secure, user-friendly interfaces and robust backend services.`,
-    "tags": ["React", "Node.js", "MongoDB", "E-commerce", "Authentication", "Redux", "Fullstack"],
-    "features": [
+    tags: ["React", "Node.js", "MongoDB", "E-commerce", "Authentication", "Redux", "Fullstack"],
+    features: [
       "Dual user authentication system (admin and student roles)",
       "Course creation and management for educators",
       "Secure payment processing and purchase tracking",
@@ -350,7 +350,7 @@ export const sideProjects: Project[] = [
       "MongoDB database with Mongoose ODM",
       "Role-based access control and protected routes"
     ],
-    "techStack": [
+    techStack: [
       "React.js",
       "Node.js",
       "Express.js",
@@ -360,7 +360,7 @@ export const sideProjects: Project[] = [
       "Tailwind CSS",
       "Axios"
     ],
-    "date": "December 15, 2024"
+    date: "December 15, 2024"
   },
   {
     id: 'movies-mania',
