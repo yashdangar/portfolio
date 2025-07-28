@@ -116,7 +116,7 @@ export default function Home() {
                 Surat, India
               </p>
               <a
-                href="https://drive.google.com/file/d/1eTrLIEtGd4cUsa_37iaNi-mWkRzEbudS/view?usp=sharing"
+                href="https://drive.google.com/file/d/1X-QmJ_oyieaWzNfE0XcEYB3Xkk9Vy_Uk/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-zinc-400 hover:text-white transition-colors underline underline-offset-1 decoration-zinc-600 hover:decoration-current "
@@ -222,7 +222,10 @@ export default function Home() {
               aria-label={`${activeTab} projects`}
             >
               {getProjectsForTab().map((project, index) => (
-                <ProjectCard key={`${activeTab}-${project.id}`} project={project} />
+                <ProjectCard
+                  key={`${activeTab}-${project.id}`}
+                  project={project}
+                />
               ))}
             </div>
           </BlurFade>
