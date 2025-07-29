@@ -79,7 +79,7 @@ export default function Home() {
         }}
       />
       <main className="min-h-screen bg-black text-white p-6 md:p-12 lg:p-24">
-        <div className="w-full sm:w-5/6 md:w-2/3 lg:w-1/2  2xl:w-1/4 mx-auto">
+        <div className="w-full sm:w-5/6 lg:w-1/2  mx-auto">
           <BlurFade delay={0.25} inView>
             <header className="mb-5 p-2">
               <h1 className="text-xl md:text-3xl font-bold mb-2">
