@@ -161,3 +161,14 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+
+::selection {
+  background-color: transparent; 
+  color: #fde047;
+}
+
+::-moz-selection {
+  background-color: transparent;
+  color: #fde047;
+}

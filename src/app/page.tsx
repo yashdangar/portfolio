@@ -18,7 +18,7 @@ import { sideProjects } from "@/projects/side";
 import Script from "next/script";
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("internship");
+  const [activeTab, setActiveTab] = useState("all");
 
   const getProjectsForTab = () => {
     switch (activeTab) {
@@ -26,6 +26,8 @@ export default function Home() {
         return freelanceProjects;
       case "side":
         return sideProjects;
+      case "all":
+        return [...internshipProjects, ...freelanceProjects, ...sideProjects];
       case "internship":
       default:
         return internshipProjects;
@@ -187,12 +189,18 @@ export default function Home() {
                 <h2 className="text-white text-md ms:text-md">Projects</h2>
 
                 <Tabs
-                  defaultValue="internship"
+                  defaultValue="all"
                   onValueChange={(value) => setActiveTab(value)}
                   className=""
                   aria-label="Project Categories"
                 >
                   <TabsList className="bg-white/5 text-white border border-white/4 rounded-md px-1 py-5">
+                    <TabsTrigger
+                      value="all"
+                      className="data-[state=active]:bg-black data-[state=active]:border-white/6 data-[state=active]:drop-shadow-md text-gray-200/70 data-[state=active]:text-white rounded-sm px-2 md:px-3 py-4 text-xs md:text-sm font-medium transition-all cursor-pointer"
+                    >
+                      All
+                    </TabsTrigger>
                     <TabsTrigger
                       value="internship"
                       className="data-[state=active]:bg-black data-[state=active]:border-white/6 data-[state=active]:drop-shadow-md text-gray-200/70 data-[state=active]:text-white rounded-sm px-2 md:px-3 py-4 text-xs md:text-sm font-medium transition-all cursor-pointer"
