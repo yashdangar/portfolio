@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://yashdangar.me"),
@@ -89,6 +90,7 @@ export default function RootLayout({
       </head>
       <body className="font-sora antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   );
