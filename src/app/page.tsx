@@ -97,7 +97,7 @@ export default function Home() {
               className="text-xs md:text-sm lg:text-md text-zinc-400 flex flex-col gap-1 mb-5"
               aria-label="Professional Information"
             >
-              <p className="flex mb-1 gap-2 items-center italic">
+              {/* <p className="flex mb-1 gap-2 items-center italic">
                 <BriefcaseBusiness aria-hidden="true" />
                 Ex.SDE-1 Intern at
                 <a
@@ -108,7 +108,7 @@ export default function Home() {
                 >
                   BuffIndia
                 </a>
-              </p>
+              </p> */}
               <p className="flex mb-1 gap-2 items-center italic">
                 <BookOpen aria-hidden="true" />
                 B.Tech. from SCET, Surat
@@ -118,7 +118,7 @@ export default function Home() {
                 Surat, India
               </p>
               <a
-                href="https://drive.google.com/file/d/1X-QmJ_oyieaWzNfE0XcEYB3Xkk9Vy_Uk/view?usp=sharing"
+                href="https://drive.google.com/file/d/10BKyYsNEMSO5QfBPCdbAyMYMBO2Kfi00/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-zinc-400 hover:text-white transition-colors underline underline-offset-1 decoration-zinc-600 hover:decoration-current "
