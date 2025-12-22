@@ -8,7 +8,7 @@ export const internshipProjects: Project[] = [
     github: "private",
     description:
       "Comprehensive cigarette waste management and recycling platform with 15+ crore INR valuation. Built 3 major and 5 minor full-stack applications during 4-month internship serving 50+ clients.",
-    longDescription: `During my 4-month internship (Mar 1 - Jun 30, 2025), I developed and contributed to a comprehensive cigarette waste management ecosystem for Buffindia, a company focused on cigarette waste recycling and product creation.
+    longDescription: `During my 6-month internship , I developed and contributed to a comprehensive cigarette waste management ecosystem for Buffindia, a company focused on cigarette waste recycling and product creation.
 
 ## Project Scope & Scale:
 - **Company Valuation**: 15+ crore INR
