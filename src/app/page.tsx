@@ -116,28 +116,39 @@ export default function Home() {
       <main className="min-h-screen bg-black text-white p-6 md:p-12 lg:p-24">
         <div className="w-full sm:w-5/6 lg:w-1/2  mx-auto">
           <BlurFade delay={0.25} inView>
-            <header className="mb-5 p-2">
+            <header className=" p-2">
               <div className="flex items-center justify-between ">
                 <h1 className="text-xl md:text-3xl font-bold mb-2">
                   Yash Dangar
                 </h1>
                 <a
-                href="https://drive.google.com/file/d/1ImbNyxyppggsNGj-QzFCFDcWOQb8B540/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-400 hover:text-white transition-colors underline underline-offset-1 decoration-zinc-600 hover:decoration-current "
-                aria-label="Download Resume"
-              >
-                <p className="flex mb-1 gap-2 items-center italic">
-                  Resume
-                </p>
-              </a>
+                  href="https://drive.google.com/file/d/1ImbNyxyppggsNGj-QzFCFDcWOQb8B540/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-400 hover:text-white transition-colors underline underline-offset-1 decoration-zinc-600 hover:decoration-current "
+                  aria-label="Download Resume"
+                >
+                  <p className="flex mb-1 gap-2 items-center italic">Resume</p>
+                </a>
               </div>
               <p className="text-gray-400 mb-3 lg:text-md text-xs">
                 Hi , I&apos;m Yash - a software engineer building Elegant
                 interfaces for the modern web.
               </p>
             </header>
+            <div className="mb-5 flex flex-wrap gap-2">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-gradient-to-r from-white/10 via-white/5 to-transparent px-3 py-2 text-xs md:text-sm text-zinc-50 shadow-sm shadow-white/5 backdrop-blur">
+                <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/10">
+                  <BookOpen
+                    aria-hidden="true"
+                    className="w-3.5 h-3.5 text-white/80"
+                  />
+                </span>
+                <span className="whitespace-nowrap font-medium">
+                  B.Tech. from SCET, Surat
+                </span>
+              </div>
+            </div>
 
             {/* Work Experience */}
             <section className="mb-8" aria-label="Work Experience">
@@ -252,15 +263,6 @@ export default function Home() {
                 </a>
               </nav>
             </section>
-
-            <div className="mb-8 flex flex-wrap gap-2">
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-gradient-to-r from-white/10 via-white/5 to-transparent px-3 py-2 text-xs md:text-sm text-zinc-50 shadow-sm shadow-white/5 backdrop-blur">
-                <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/10">
-                  <BookOpen aria-hidden="true" className="w-3.5 h-3.5 text-white/80" />
-                </span>
-                <span className="whitespace-nowrap font-medium">B.Tech. from SCET, Surat</span>
-              </div>
-            </div>
 
             <section
               className="flex flex-col w-full mb-8"
