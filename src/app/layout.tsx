@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://yashdangar.me"),
@@ -85,11 +86,52 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className="font-sora antialiased">
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Yash Dangar",
+              jobTitle: "Software Engineer",
+              description:
+                "Software engineer building elegant interfaces for the modern web",
+              url: "https://yashdangar.me",
+              image: "https://yashdangar.me/og-image.png",
+              sameAs: [
+                "https://github.com/yashdangar",
+                "https://linkedin.com/in/yashdangar",
+                "https://x.com/YashDangar20",
+              ],
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Surat",
+                addressCountry: "India",
+              },
+              alumniOf: {
+                "@type": "Organization",
+                name: "SCET",
+              },
+              worksFor: {
+                "@type": "Organization",
+                name: "BuffIndia",
+              },
+              knowsAbout: [
+                "Web Development",
+                "React",
+                "Next.js",
+                "Frontend Development",
+                "Software Engineering",
+              ],
+            }),
+          }}
+        />
         {children}
         <Analytics />
         <SpeedInsights />
