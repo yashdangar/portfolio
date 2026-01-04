@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: "Yash Dangar - Software Engineer & Web Developer",
     template: "%s | Yash Dangar"
   },
-  description: "Yash Dangar is a software engineer building elegant interfaces for the modern web. Ex-SDE-1 Intern at BuffIndia. Based in Surat, India.",
+  description: "Yash Dangar is a software engineer building elegant interfaces for the modern web. Trainee Developer at 3RP-Technetium. Based in Surat, India.",
   keywords: [
     "Yash Dangar",
     "Software Engineer",
@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "Portfolio",
     "Surat",
     "India",
+    "3RP-Technetium",
     "BuffIndia",
     "SCET"
   ],
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     url: "https://yashdangar.me",
     siteName: "Yash Dangar",
     title: "Yash Dangar - Software Engineer & Web Developer",
-    description: "Yash Dangar is a software engineer building elegant interfaces for the modern web. Ex-SDE-1 Intern at BuffIndia. Based in Surat, India.",
+    description: "Yash Dangar is a software engineer building elegant interfaces for the modern web. Trainee Developer at 3RP-Technetium. Based in Surat, India.",
     images: [
       {
         url: "https://yashdangar.me/og-image.png",
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Yash Dangar - Software Engineer & Web Developer",
-    description: "Yash Dangar is a software engineer building elegant interfaces for the modern web. Ex-SDE-1 Intern at BuffIndia.",
+    description: "Yash Dangar is a software engineer building elegant interfaces for the modern web. Trainee Developer at 3RP-Technetium.",
     images: ["https://yashdangar.me/og-image.png"],
     creator: "@YashDangar20",
   },
@@ -120,7 +121,7 @@ export default function RootLayout({
               },
               worksFor: {
                 "@type": "Organization",
-                name: "BuffIndia",
+                name: "3RP-Technetium",
               },
               knowsAbout: [
                 "Web Development",
