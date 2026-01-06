@@ -26,7 +26,7 @@ const workExperiences: WorkExperience[] = [
     role: "Software Development Intern",
     location: "Remote",
     startDate: "Feb 2025",
-    endDate: "Jun 2025",
+    endDate: "Jul 2025",
     companyUrl: "https://buffindia.com",
   },
 ];
