@@ -9,7 +9,7 @@ export default function Header() {
             Yash Dangar
           </h1>
           <a
-            href="https://drive.google.com/file/d/1YzTPcJoyfGOOOlfcvkhQFcTrsF_S2swg/view?usp=sharing"
+            href="https://drive.google.com/file/d/139UoaOnm__OT99Ons_GKaUr-4TyiYpo3/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="text-zinc-400 hover:text-white transition-colors underline underline-offset-1 decoration-zinc-600 hover:decoration-current"

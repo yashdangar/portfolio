@@ -12,6 +12,15 @@ interface WorkExperience {
 
 const workExperiences: WorkExperience[] = [
   {
+    id: "exp-0",
+    company: "Techlab solution",
+    role: "Mern Stack Developer Intern",
+    location: "Onsite",
+    startDate: "Jan 2026",
+    endDate: "Apr 2026",
+    companyUrl: "https://www.techlabsolution.com/",
+  },
+  {
     id: "exp-1",
     company: "3RP-Technetium",
     role: "Trainee Developer",
